@@ -163,6 +163,7 @@ Jika kalian kalian pernah ikut Q-Blockchain dan testnet node lainnya kemungkinan
    ```console
    stader-cli --allow-root node register --on <MONIKER>
    ```
+   Gas price masukin 800-900 gwei
 
    Ganti moniker terserah kalian, contoh:
    
@@ -173,14 +174,41 @@ Jika kalian kalian pernah ikut Q-Blockchain dan testnet node lainnya kemungkinan
    ```console
    stader-cli --allow-root node deposit-sd --amount 640
    ```
+   Gas price masukin 800-900 gwei
+
 6. Deposit 4 ETH
    ```console
    stader-cli --allow-root node deposit --num-validators 1
    ```
+   Gas price masukin 800-900 gwei
 7. Cek status
    ```console
    stader-cli --allow-root node status
    ```
+   Nanti akan keluar output seperti ini
+   ```
+   === Operator Registration Details ===
+   The node is registered with Stader. Below are node details:
+   Operator Id: xxx
+
+   Operator Name: xxxxx
+
+   Operator Reward Address: 0x0000000000000000000000000000000000000000
+
+   === Registered Validator Details ===
+   1)
+   -Validator Pub Key: xxxxxxxxx
+
+   -Validator Status: Initialized
+
+   -Validator Withdraw Vault: 0x0000000000000000000000000000000000000000
+   ```
+
+   Copy outputnya
+
+8. Masuk ke channel [#ethx-rolling-beta-test](https://discord.com/channels/839544036984750120/1089835916274708490) terus kalian paste output tadi di chat
+9. Done, tinggal tunggu dev depo 32 goerli ETH
+10. Send feedback di discord
 
 ## Perintah berguna
 
